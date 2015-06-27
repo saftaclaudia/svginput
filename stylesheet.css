@@ -1,5 +1,9 @@
 
 .wrapper{
 	margin-top:40px;
-	width: 900px;
+	width: 1200px;
+}
+#notepad{
+	border: 2px solid #0c2436;
+	margin-top: 20px;
 }

@@ -7,31 +7,27 @@
 </head>
 <body>
 	<div class= "wrapper center-block">
-		<form class="form-horizontal">
+		<form class="form-inline">
 			<div class="form-group">
-				<label for="radiusCircle" class="col-sm-2 control-label">Type radius </label>
-				<div class="col-sm-8">
-					<input type="text"  class="form-control" name="radius" id="radius" placeholder="radius value">
+				<label for="radiusCircle">Radius </label>
+				<input type="text"  class="form-control" name="radius" id="radius" placeholder="radius value" value="12">
+			</div>
+			<div class="form-group">
+				<label for="strokeCircle">Pick color </label>
+				<div class="input-group">
+					<div class="input-group-addon hash">#</div>
+					<input type="text"  class="form-control" name="stroke" id="stroke" placeholder="color" value="ff0000">
+					<div class="input-group-addon color"></div>
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="strokeCircle" class="col-sm-2 control-label">Pick color </label>
-				<div class="col-sm-8">
-					<input type="text"  class="form-control" name="stroke" id="stroke" placeholder="pick color">
-				</div>
+				<label for="strokewidthCircle">Stroke-width </label>
+				<input type="text"  class="form-control" name="stroke-width" id="stroke-width" placeholder="stroke-width value" value="2">
 			</div>
-			<div class="form-group">
-				<label for="strokewidthCircle"class="col-sm-2 control-label">Type stroke-width </label>
-				<div class="col-sm-8">
-					<input type="text"  class="form-control" name="stroke-width" id="stroke-width" placeholder="stroke-width value">
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-8">
-					<button type="button" id="button" class="btn btn-success"> Daw circle</button>
-				</div>
-			</div>
+			<button type="button" id="button" class="btn btn-success"> Draw circle</button>
 		</form>
+
+		<div id="notepad"></div>
 	</div>
 
 	<script type='text/javascript' src= 'assets/jquery-1.11.1.min.js'></script>
